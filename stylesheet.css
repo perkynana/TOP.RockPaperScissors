@@ -1,0 +1,28 @@
+:root {
+    background-color: #9af9fe;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.userChoice,
+.computerChoice {
+    display: flex;
+    justify-content: space-between;
+}
+
+.choice {
+    min-width: 65px
+}
+
+.fa-hand:hover {
+    transform: (1.5);
+}
+
+.hand:hover {
+    transform: scale(2) rotate(90deg);
+}
+
+.scores {
+    border: solid 1px
+}
