@@ -5,24 +5,41 @@
     justify-content: center;
 }
 
+.choices {
+    margin-bottom: 20px;
+}
+
 .userChoice,
 .computerChoice {
     display: flex;
     justify-content: space-between;
+    border: solid 1px black;
+    margin: 5px;
+    padding-bottom: 20px;
 }
 
 .choice {
-    min-width: 65px
-}
-
-.fa-hand:hover {
-    transform: (1.5);
+    min-width: 90px
 }
 
 .hand:hover {
-    transform: scale(2) rotate(90deg);
+    transform: scale(2) rotate(75deg);
 }
 
 .scores {
-    border: solid 1px
+    border: solid 1px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 5px;
+}
+
+.userScore,
+.computerScore {}
+
+input {
+    width: 30px;
+    border: none;
+    background-color: #9af9fe;
 }
