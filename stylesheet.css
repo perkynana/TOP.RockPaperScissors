@@ -10,7 +10,6 @@
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-evenly;
-    margin-bottom: 20px;
 }
 
 .userChoiceWrapper,
@@ -22,24 +21,26 @@
     background-color: #43b1bc;
 }
 
-.userChoice,
-.computerChoice {
+.userChoices,
+.computerChoices {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
 }
 
-.choice {
+.choices {
     min-width: 90px;
 }
 
-.hand:hover {
+.userRock:hover,
+.userPaper:hover,
+.userScissors:hover {
     transform: scale(2) rotate(75deg);
     border-radius: 5px;
 }
 
-.scores {
+.userScoreWrapper,
+.computerScoreWrapper {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -58,6 +59,7 @@ input::placeholder {
     color: black;
 }
 
-.logo {
+.userLogo,
+.computerLogo {
     transform: scale(2);
 }
