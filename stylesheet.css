@@ -1,45 +1,63 @@
 :root {
-    background-color: #9af9fe;
+    background-color: #5ba483;
     text-align: center;
     display: flex;
     justify-content: center;
 }
 
-.choices {
+.choicesWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
     margin-bottom: 20px;
+}
+
+.userChoiceWrapper,
+.computerChoiceWrapper {
+    border: solid 1px black;
+    border-radius: 5px;
+    margin: 5px;
+    padding-bottom: 20px;
+    background-color: #43b1bc;
 }
 
 .userChoice,
 .computerChoice {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    border: solid 1px black;
-    margin: 5px;
-    padding-bottom: 20px;
+
 }
 
 .choice {
-    min-width: 90px
+    min-width: 90px;
 }
 
 .hand:hover {
     transform: scale(2) rotate(75deg);
+    border-radius: 5px;
 }
 
 .scores {
-    border: solid 1px;
-    border-radius: 5px;
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: space-evenly;
     padding: 5px;
 }
 
-.userScore,
-.computerScore {}
-
 input {
     width: 30px;
     border: none;
-    background-color: #9af9fe;
+    background-color: #43b1bc;
+    font-size: xx-large;
+}
+
+input::placeholder {
+    color: black;
+}
+
+.logo {
+    transform: scale(2);
 }
