@@ -37,7 +37,7 @@ function playRound(playerSelection, computerSelection) {
     }
 }
 
-
+// Using a Prompt via the brower we are able to capture the users selection
 function getPlayerChoice() {
     let validatedInput = false;
     while (validatedInput == false) {
@@ -53,7 +53,7 @@ function getPlayerChoice() {
     }
 }
 
-// Creating a loop until either the user or the computer reaches 5 wins
+// Creating a loop so that 5 games are played between the user and computer. 
 function game() {
     let scorePlayer = 0;
     let scoreComputer = 0;
@@ -61,12 +61,14 @@ function game() {
         const playerSelection = getPlayerChoice();
         const computerSelection = getComputerChoice();
         console.log(playRound(playerSelection, computerSelection));
+        // After each round played we add 1 to either the player or the computer until 5 games are played. If a tie, no score is given out
         if (checkWinner(playerSelection, computerSelection) == "Player") {
             scorePlayer++;
         } else if (checkWinner(playerSelection, computerSelection) == "Computer") {
             scoreComputer++;
         }
     }
+    // Console logging the outcomes
     console.log("Game Over")
     if (scorePlayer > scoreComputer) {
         console.log("Player was the winner");
