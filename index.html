@@ -2,67 +2,43 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>RockPaperScissors</title>
-    <link rel="stylesheet" href="stylesheet.css">
-    <script src="https://kit.fontawesome.com/5ee6ee7885.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors with UI</title>
+    <link rel="stylesheet" href="stylesheet.css" />
 </head>
 
 <body>
     <div class="title">
-        <h1>Rock, Paper, Scissors</h1>
-        <h3>The first to 5 wins</h3>
+        <h1>Rock Paper Scissors</h1>
     </div>
-    <div class="choicesWrapper">
-        <div class="userChoiceWrapper">
-            <div class="userScoreWrapper">
-                <i class="fa-regular fa-user userLogo"></i>
-                <input placeholder="0" disabled class="userScore">
-            </div>
-            <div class="userChoices">
-                <div class="choices">
-                    <h3>Rock</h3>
-                    <i class="fa-regular fa-hand-back-fist fa-2xl userRock"></i>
-                </div>
-                <div class="choices">
-                    <h3>Paper</h3>
-                    <i class="fa-regular fa-hand fa-2xl userPaper"></i>
-                </div>
-                <div class="choices">
-                    <h3>Scissors</h3>
-                    <i class="fa-regular fa-hand-scissors fa-2xl userScissors"></i>
-                </div>
-            </div>
+    <div class="score">
+        <h1 class="ties">Ties: 0</h1>
+    </div>
+    <div class="winnerDiv">
+        <h1 class="winner"></h1>
+        <button class="reset" onclick="resetGame()">Play Again?</button>
+    </div>
+    <div class="playerSection">
+        <h3 class="playerChoice"></h3>
+        <h3 class="playerScore">Player Score: 0</h3>
+        <div class="playerImgs">
+            <img src="./images/rock.png" alt="Rock" class="pImg" id="rock" />
+            <img src="./images/paper.png" alt="Paper" class="pImg" id="paper" />
+            <img src="./images/scissors.png" alt="Scissors" class="pImg" id="scissors" />
         </div>
-        <div class="computerChoice">
-            <div class="computerChoiceWrapper">
-                <div class="computerScoreWrapper">
-                    <i class="fa-solid fa-laptop computerLogo"></i>
-                    <input placeholder="0" disabled class="computerScore">
-                </div>
-                <div class="computerChoices">
-                    <div class="choices">
-                        <h3>Rock</h3>
-                        <i class="fa-regular fa-hand-back-fist fa-2xl computerRock"></i>
-                    </div>
-                    <div class="choices">
-                        <h3>Paper</h3>
-                        <i class="fa-regular fa-hand fa-2xl computerPaper"></i>
-                    </div>
-                    <div class="choices">
-                        <h3>Scissors</h3>
-                        <i class="fa-regular fa-hand-scissors fa-2xl computerScissor"></i>
-                    </div>
-                </div>
-            </div>
+    </div>
+    <div class="computerSection">
+        <h3 class="computerChoice"></h3>
+        <h3 class="computerScore">Computer Score: 0</h3>
+        <div class="computerImgs">
+            <img src="./images/rock.png" alt="Rock" class="rock" />
+            <img src="./images/paper.png" alt="Paper" class="paper" />
+            <img src="./images/scissors.png" alt="Scissors" class="scissors" />
         </div>
-        <script src="main.js" defer>
-            window.onload = function () {
-                setTimeout(function () { setUp(); }, 5000);
-            }
-        </script>
+    </div>
 </body>
+<script src="main.js"></script>
 
 </html>

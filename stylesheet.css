@@ -3,63 +3,10 @@
     text-align: center;
     display: flex;
     justify-content: center;
+    box-sizing: border-box;
 }
 
-.choicesWrapper {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-
-.userChoiceWrapper,
-.computerChoiceWrapper {
-    border: solid 1px black;
-    border-radius: 5px;
-    margin: 5px;
-    padding-bottom: 20px;
-    background-color: #43b1bc;
-}
-
-.userChoices,
-.computerChoices {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.choices {
-    min-width: 90px;
-}
-
-.userRock:hover,
-.userPaper:hover,
-.userScissors:hover {
-    transform: scale(2) rotate(75deg);
-    border-radius: 5px;
-}
-
-.userScoreWrapper,
-.computerScoreWrapper {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-    padding: 5px;
-}
-
-input {
-    width: 30px;
-    border: none;
-    background-color: #43b1bc;
-    font-size: xx-large;
-}
-
-input::placeholder {
-    color: black;
-}
-
-.userLogo,
-.computerLogo {
-    transform: scale(2);
+img {
+    width: 10%;
+    height: auto;
 }
